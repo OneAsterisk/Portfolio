@@ -41,7 +41,7 @@ h1, h2, p{
 
 
 
-.nav-bar a:hover{
+.nav-bar-item:hover{
     background-color: #30303a;
-    color: #000;
+    color: #000000;
 }
