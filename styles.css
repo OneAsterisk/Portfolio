@@ -9,8 +9,15 @@
     color:aliceblue;
     background-color: #282831;
 }
+.main-header{
+    margin-left: 25%;
+    text-align: left;
+}
 h1, h2, p{
     font-family: Arial;
+}
+.bigletters{
+    text-transform: uppercase;
 }
 .MTU {
     color: #faea07;
