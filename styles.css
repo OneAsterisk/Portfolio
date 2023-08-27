@@ -10,7 +10,8 @@
     background-color: #282831;
 }
 .main-header{
-    margin-left: 25%;
+    padding-left: .25rem;
+    background-color: #282830;
     text-align: left;
 }
 h1, h2, p{
@@ -45,8 +46,15 @@ h1, h2, p{
     text-decoration: none;
     font-size: 15px;
 }
-
-
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc-text{
+    text-align: center;
+    max-width: 900px;
+}
 
 .nav-bar-item:hover{
     background-color: #30303a;
