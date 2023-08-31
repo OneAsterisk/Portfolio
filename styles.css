@@ -153,6 +153,7 @@ p {
   flex-shrink: 1;
   width: 25rem;
   max-width: 35rem;
+  height: 1000rem;
 }
 .form-group input {
   background-color: transparent;
