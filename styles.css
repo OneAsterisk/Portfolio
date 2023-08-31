@@ -69,8 +69,9 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 .project-preview {
+  overflow: hidden;
   width: 20rem;
-  height: 20rem;
+  height: 25rem;
   border-radius: 8px;
   border-color: #f3f3f3;
   border-width: 1px;
@@ -83,6 +84,15 @@ p {
   position: relative;
   margin-top: 5rem;
   margin-left: 3.75rem;
+}
+.project-preview p{
+    text-align: justify;
+    text-indent: 1rem;
+    overflow-wrap:normal;
+    margin-top: 15rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    max-width: 18rem;    
 }
 .bigletters {
   text-transform: uppercase;
