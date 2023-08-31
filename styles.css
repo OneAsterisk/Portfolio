@@ -9,6 +9,11 @@
   box-shadow: 0 0 0 100vmax rgba(23, 23, 26, 0.5);
   clip-path: inset(0 -100vmax);
 }
+#navbar.full-bleed {
+  top: 0px;
+  box-shadow: 0 0 0 100vmax rgba(23, 23, 26, 1);
+  clip-path: inset(0 -100vmax);
+}
 .main-body {
   text-align: center;
   color: aliceblue;
@@ -21,7 +26,7 @@
   max-width: 80rem;
   align-items: center;
   flex-direction: column;
-  background: rgb(23, 23, 26, 0.5);
+  background: #1f1f25;
   text-align: left;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -48,19 +53,20 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 .project-preview {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 8px;
-    border-color: #f3f3f3;
-    border-width: 1px;
-    border-style: groove;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 8px;
+  border-color: #f3f3f3;
+  border-width: 1px;
+  border-style: groove;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
 }
-.project-preview img{
-    margin-top: 5rem;
-    margin-left: 3.75rem;
+.project-preview img {
+  position: relative;
+  margin-top: 5rem;
+  margin-left: 3.75rem;
 }
 .bigletters {
   text-transform: uppercase;
@@ -80,20 +86,22 @@ p {
 }
 
 .nav-bar-main {
+  width: 100%;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   margin-top: -10px;
   flex: 50%;
-  position: sticky;
   background-color: rgba(23, 23, 26, 1);
 }
 
 .nav-bar-item {
-    position: sticky;
   font-family: Arial;
   color: #f3f3f3;
   text-align: center;
   padding: 0.3125rem 0.625rem;
   text-decoration: none;
-  font-size: 15px;
 }
 .main {
   display: flex;
@@ -111,20 +119,17 @@ p {
   background-color: #30303a;
   color: #000000;
 }
-.contact-info-form{
-    display: flex;
-    background-color: #30303a;
-    min-width: 40rem;
-    min-height: 2000rem;
-    max-width: 40rem;
-    max-height: 20rem;
-    
-
+.contact-info-form {
+  display: flex;
+  background-color: #30303a;
+  min-width: 35rem;
+  min-height: 20rem;
+  max-width: 40rem;
 }
-.form-group input{
-    background-color: transparent;
-    margin-bottom: 1rem;
-    color:white;
-    border-style: groove;
-    border-color: #30303a;
+.form-group input {
+  background-color: transparent;
+  margin-bottom: 1rem;
+  color: white;
+  border-style: groove;
+  border-color: #30303a;
 }
