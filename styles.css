@@ -27,6 +27,7 @@
   max-width: 80rem;
   align-items: center;
   justify-content: center;
+  justify-items: left;
 }
 .main-header {
   justify-content: flex-start;
@@ -40,6 +41,7 @@
   text-align: left;
   margin-bottom: 0px;
   margin-top: 0px;
+  padding-right: 45px;
 }
 .title-container img {
   max-width: 64px;
