@@ -67,6 +67,7 @@ p {
   display: flex;
   gap: 3rem;
   flex-flow: row wrap;
+  justify-content: center;
 }
 .project-preview {
   overflow: hidden;
