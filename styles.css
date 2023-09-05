@@ -47,13 +47,16 @@
 .title-container img {
   max-width: 64px;
   max-height: 64px;
-  padding-top: 1rem;
+  padding-top: 1.8rem;
   padding-bottom: 1rem;
 }
 .main-header h1,
 .main-header p {
   margin-top: 0.635rem;
   margin-bottom: 0.635rem;
+}
+.main-header h1{
+  padding-top: 1.3rem;
 }
 h1,
 h2,
@@ -63,8 +66,9 @@ p {
 .contact-info-form {
   display: flex;
   box-sizing: border-box;
-  border: black solid 1px;
+  border: black outset 1px;
   border-radius: 1rem;
+  max-width: 34.875rem;
 }
 .project-container {
   box-sizing: border-box;
@@ -78,9 +82,9 @@ p {
   width: 20rem;
   height: 25rem;
   border-radius: 8px;
-  border-color: #f3f3f3;
-  border-width: 1px;
-  border-style: groove;
+  border-color: #000000;
+  border-width:3px;
+  border-style: outset;
   display: flex;
   flex-direction: column;
   color: #ffffff;
@@ -163,6 +167,11 @@ p {
   max-width: 35rem;
   height: 20rem;
   gap: .625rem;
+}
+@media screen and (max-width: 600px) {
+  .contact-form {
+    max-width: 50%;
+  }
 }
 .contact-form{
   display: flex;
