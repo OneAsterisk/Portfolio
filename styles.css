@@ -21,14 +21,15 @@
   background-color: #282831;
 }
 .title-container {
+  width: 100%;
   top: -10px;
   position: relative;
   display: flex;
   background-color: rgba(23, 23, 26, 0.5);
-  max-width: 80rem;
   align-items: center;
   justify-content: center;
   justify-items: left;
+  align-items: center;
 }
 .main-header {
   justify-content: flex-start;
