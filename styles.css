@@ -180,8 +180,8 @@ p {
   padding-left: 1rem;
 }
 .contact-info a {
-  color: rgb(179, 178, 178);
-  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
   font-weight: bold;
 }
 .contact-info a:hover {
@@ -189,7 +189,7 @@ p {
 }
 
 .contact-info a:visited {
-  color: purple;
+  color: rgb(255, 255, 255);
 }
 .contact-info p {
   margin-right: 1rem;
