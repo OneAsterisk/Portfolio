@@ -1,8 +1,14 @@
 @charset "UTF-8";
 /* Custom Fonts for the AppShell */
 @font-face {
-  font-family: "coolvetica rg", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "coolvetica rg", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
   src: url(".\fonts\coolvetica rg.otf");
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
 }
 
 .full-bleed {
@@ -56,7 +62,7 @@
   margin-top: 0.635rem;
   margin-bottom: 0.635rem;
 }
-.main-header h1{
+.main-header h1 {
   padding-top: 1.3rem;
 }
 h1,
@@ -72,6 +78,7 @@ p {
   max-width: 34.875rem;
 }
 .project-container {
+  margin-top: 2rem;
   box-sizing: border-box;
   display: flex;
   gap: 3rem;
@@ -79,30 +86,31 @@ p {
   justify-content: center;
 }
 .project-preview {
+  align-items: center;
   overflow: hidden;
-  width: 20rem;
-  height: 25rem;
+  width: 21rem;
+  min-height: 25rem;
+  max-height: fit-content;
   border-radius: 8px;
   border-color: #000000;
-  border-width:3px;
+  border-width: 3px;
   border-style: outset;
   display: flex;
   flex-direction: column;
   color: #ffffff;
+  overflow-wrap: normal;
 }
 .project-preview img {
   position: relative;
   margin-top: 5rem;
-  margin-left: 3.75rem;
+  border: #ffffff 0.5px solid;
 }
+
 .project-preview p {
-  text-align: justify;
   text-indent: 1rem;
   overflow-wrap: normal;
   margin-top: 15rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  max-width: 18rem;
+  max-width: 19rem;
 }
 .bigletters {
   text-transform: uppercase;
@@ -157,24 +165,13 @@ p {
   background-color: #30303a;
   color: #000000;
 }
-.contact-info-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: baseline;
-  background-color: #30303a;
-  flex-shrink: 1;
-  width: 35rem;
-  max-width: 35rem;
-  height: 20rem;
-  gap: .625rem;
-}
+
 @media screen and (max-width: 600px) {
   .contact-form {
     max-width: 50%;
   }
 }
-.contact-form{
+.contact-form {
   display: flex;
 }
 .contact-info {
@@ -183,8 +180,9 @@ p {
   padding-left: 1rem;
 }
 .contact-info a {
-  color: white;
+  color: rgb(179, 178, 178);
   text-decoration: none;
+  font-weight: bold;
 }
 .contact-info a:hover {
   color: #5582ff;
@@ -196,32 +194,4 @@ p {
 .contact-info p {
   margin-right: 1rem;
   text-align: left;
-}
-.form-group {
-  padding-top: 1.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.form-group input,
-textarea {
-  background-color: transparent;
-  color: white;
-  border-style: groove;
-  border-color: #30303a;
-  border-radius: .25rem;
-  width: 10rem;
-}
-.form-textarea {
-  resize: none;
-  height: 6.45rem;
-  width: 20rem;
-  max-height: 21rem;
-}
-#Submit{
-  width: 5rem;
-}
-#Submit:hover{
-  color: #000000;
-  background-color: #ffffff;
-  width: 5rem;
 }
